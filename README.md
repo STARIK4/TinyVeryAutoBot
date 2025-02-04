@@ -28,7 +28,8 @@ To get your GALAXY_ID, follow these steps:
 6. In the Payload section of the createrequest, you will find the galaxy_idfield. This is your GALAXY_ID
 
 # 2. Running the Bot
-Run the bot: python run.py 
-The bot will start collecting stars at random intervals and send the updates to your Telegram account (if configured to do so).
-Disclaimer
+Run the bot: <code>python run.py</code>
+
+Then go to the telegram bot and start registration there.
+# Disclaimer
 By using this software, you agree that you are responsible for any actions performed with it. I do not accept any responsibility for any damage or consequences resulting from using this bot or its components. Use at your own risk.
