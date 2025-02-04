@@ -10,7 +10,6 @@
 ## Prerequisites
 
 - Python 3.10+
-- Required Python packages (listed below)
 
 ## Getting Started
 
