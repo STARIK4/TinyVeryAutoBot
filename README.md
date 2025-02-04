@@ -1,7 +1,7 @@
 # Script on python for TinyVery stars collection and dust
 
 
-Main advantages:
+### Main advantages:
 + Automatic collection of rewards
 + Complete randomization of collection of rewards
 + Adding a large number of accounts
@@ -37,8 +37,9 @@ To get your `GALAXY_ID`, follow these steps:
 
 ## 2. Running the Bot
 Run the bot:
-'''bash     python run.py
-    '''
+   ```bash
+   python main.py
+   ```
 Then go to the telegram bot and start registration there.
 ## Disclaimer
 By using this software, you agree that you are responsible for any actions performed with it. I do not accept any responsibility for any damage or consequences resulting from using this bot or its components. Use at your own risk.
