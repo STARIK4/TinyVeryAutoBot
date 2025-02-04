@@ -7,19 +7,19 @@ Main advantages:
 + Adding a large number of accounts
 + Convenient setup using a telegram bot
 
-<h6>Prerequisites</h6>
+<h2>Prerequisites</h2>
 * Python 3.10+
-<h6>Getting Started</h6>
+<h2>Getting Started</h2>
 Follow these steps to set up and use the bot:
-<h6>1. Obtaining Your Session ID and GALAXY_ID</h6>
-<h3>To get your SESSION_ID, follow these steps:</h3>
+<h2>1. Obtaining Your Session ID and GALAXY_ID</h2>
+<h4>To get your SESSION_ID, follow these steps:</h4>
 1. Open your browser and go to telegram.web
 2. Press F12 to open the Developer Tools
 3. Go to the Network tab
 4. Trigger a star collection request (perform the action that collects stars)
 5. Find the POST request named collect in the network logs
 6. In the Payload section of the collect request, you will find the session field. This is your SESSION_ID
-<h3>To get your GALAXY_ID, follow these steps:</h3>
+<h4>To get your GALAXY_ID, follow these steps:</h4>
 1. Open your browser and go to telegram.web
 2. Press F12 to open the Developer Tools
 3. Go to the Network tab
