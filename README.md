@@ -37,7 +37,7 @@ To get your `GALAXY_ID`, follow these steps:
 ## 2. Running the Bot
 Run the bot:
    ```bash
-   python main.py
+   python run.py
    ```
 Then go to the telegram bot and start registration there.
 ## Disclaimer
