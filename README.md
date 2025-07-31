@@ -34,6 +34,13 @@ To get your `GALAXY_ID`, follow these steps:
 5. Find the `POST` request named `create` in the network logs
 6. In the `Payload` section of the `create` request, you will find the `galaxy_id` field. This is your `GALAXY_ID`
 
+Create file .env:
+TOKEN = "token telegram bot"
+
+NOTIFACAL = "token telegram bot where will be send messege about error"
+
+CHAT_ID = "your number chat_id"
+
 ## 2. Running the Bot
 Run the bot:
    ```bash

@@ -7,42 +7,32 @@ from aiogram.types import Message,CallbackQuery
 from aiogram.fsm.state import StatesGroup,State
 from aiogram.fsm.context import FSMContext
 
-# Инициализация основных компонентов
 router = Router()
+account_list = {}
+running_task = {}
+set_collect = {}
+set_stars = {}
 
-# Глобальные хранилища данных
-account_list = {}  # Список аккаунтов пользователей
-running_task = {}  # Активные задачи
-set_collect = {}   # Настройки сбора пыли
-set_stars = {}     # Настройки создания звезд
-
-
-# Класс для управления состояниями бота
 class Reg(StatesGroup):
-    """Состояния для управления ботом"""
-    run_account = State()            # Состояние запуска аккаунта
-    stop_account = State()           # Состояние остановки аккаунта
-    set_time_collet_min = State()    # Минимальное время сбора
-    set_time_collet_max = State()    # Максимальное время сбора
-    set_time_stars_min = State()     # Минимальное время создания звезд
-    set_time_stars_max = State()     # Максимальное время создания звезд
-    registration_session = State()    # Регистрация сессии
-    registration_galaxy = State()     # Регистрация галактики
-    registration_proxy = State()      # Регистрация прокси
-    delet_account = State()          # Удаление аккаунта
+    run_account = State()
+    stop_account = State()
+    set_time_collet_min = State()
+    set_time_collet_max = State()
+    set_time_stars_min = State()
+    set_time_stars_max = State()
+    registration_session = State()
+    registration_galaxy = State()
+    registration_proxy = State()
+    delet_account = State()
     
-# Функция для запуска задач автоматизации
 async def start_task(user_id):
-    """
-    Создает и запускает задачи для сбора пыли и создания звезд.
-    """
-    from run import collect, create_stars
-    task1 = asyncio.create_task(collect(user_id))
-    await asyncio.sleep(random.randint(10, 30))
-    task2 = asyncio.create_task(create_stars(user_id))
-    return task1, task2
+        from run import collect,create_stars
+        task1 = asyncio.create_task(collect(user_id))
+        await asyncio.sleep(random.randint(10,30))
+        task2 = asyncio.create_task(create_stars(user_id))
+        return task1,task2
         
-# Вспомогательные функции для получения настроек времени
+
 async def min_c(user_id):
     TIME_MIN_COLLET = set_collect[user_id][0]["set_time_collet_min"]
     return TIME_MIN_COLLET
